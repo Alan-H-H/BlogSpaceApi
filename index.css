@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     width: 700px;
-    align-items: center;
+    text-align: center;
 }
 
 nav {
@@ -13,7 +13,7 @@ nav {
     display: flex;
     align-items: center;
     position: fixed;
-    width: 100%;
+    width: 700px;
 }
 
 nav > h3 {
