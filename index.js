@@ -1,6 +1,7 @@
 let postsArray = []
 const titleInput = document.getElementById("post-title")
 const bodyInput = document.getElementById("post-body")
+const form = document.getElementById("new-post")
 
 function renderPosts() {
     let html = ""
@@ -21,7 +22,7 @@ fetch("https://apis.scrimba.com/jsonplaceholder/posts")
         renderPosts()
     })
 
-document.getElementById("new-post").addEventListener("submit", function(e) {
+form.addEventListener("submit", function(e) {
     e.preventDefault()
     const postTitle = titleInput.value
     const postBody = bodyInput.value
@@ -48,5 +49,6 @@ document.getElementById("new-post").addEventListener("submit", function(e) {
              */
             titleInput.value = ""
             bodyInput.value = ""
+            // form.reset()
         })
 })
